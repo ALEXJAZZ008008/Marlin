@@ -701,7 +701,7 @@
   //#define ENDSTOPPULLUP_XMIN
   //#define ENDSTOPPULLUP_YMIN
   //#define ENDSTOPPULLUP_ZMIN
-  #define ENDSTOPPULLUP_ZMIN_PROBE  // ENABLE FOR BLTOUCH - CHADDEVOPS
+  //#define ENDSTOPPULLUP_ZMIN_PROBE  // ENABLE FOR BLTOUCH - CHADDEVOPS
 #endif
 
 // Enable pulldown for all endstops to prevent a floating state
@@ -912,7 +912,7 @@
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-#define USE_PROBE_FOR_Z_HOMING // ENABLE FOR BLTOUCH - CHADDEVOPS
+//#define USE_PROBE_FOR_Z_HOMING // ENABLE FOR BLTOUCH - CHADDEVOPS
 
 /**
  * Z_MIN_PROBE_PIN
@@ -974,7 +974,7 @@
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-#define BLTOUCH // ENABLE FOR BLTOUCH - CHADDEVOPS
+//#define BLTOUCH // ENABLE FOR BLTOUCH - CHADDEVOPS
 
 /**
  * Touch-MI Probe by hotends.fr
@@ -1184,7 +1184,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 10
 
 // Enable the M48 repeatability test to test probe accuracy
-#define Z_MIN_PROBE_REPEATABILITY_TEST // ENABLE FOR BLTOUCH - CHADDEVOPS
+//#define Z_MIN_PROBE_REPEATABILITY_TEST // ENABLE FOR BLTOUCH - CHADDEVOPS
 
 // Before deploy/stow pause for user confirmation
 //#define PAUSE_BEFORE_DEPLOY_STOW
@@ -1307,7 +1307,7 @@
 #if ENABLED(MIN_SOFTWARE_ENDSTOPS)
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
-  //#define MIN_SOFTWARE_ENDSTOP_Z // DISABLE FOR BLTOUCH - CHADDEVOPS
+  #define MIN_SOFTWARE_ENDSTOP_Z // DISABLE FOR BLTOUCH - CHADDEVOPS
 #endif
 
 // Max software endstops constrain movement within maximum coordinate bounds
@@ -1438,7 +1438,7 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-#define AUTO_BED_LEVELING_BILINEAR  // ENABLE FOR BLTOUCH - CHADDEVOPS
+//#define AUTO_BED_LEVELING_BILINEAR  // ENABLE FOR BLTOUCH - CHADDEVOPS
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
@@ -1447,13 +1447,13 @@
  * these options to restore the prior leveling state or to always enable
  * leveling immediately after G28.
  */
-#define RESTORE_LEVELING_AFTER_G28  // ENABLE FOR BLTOUCH - CHADDEVOPS
+//#define RESTORE_LEVELING_AFTER_G28  // ENABLE FOR BLTOUCH - CHADDEVOPS
 //#define ENABLE_LEVELING_AFTER_G28
 
 /**
  * Auto-leveling needs preheating
  */
-#define PREHEAT_BEFORE_LEVELING   // ENABLE FOR BLTOUCH - CHADDEVOPS
+//#define PREHEAT_BEFORE_LEVELING   // ENABLE FOR BLTOUCH - CHADDEVOPS
 #if ENABLED(PREHEAT_BEFORE_LEVELING)
   #define LEVELING_NOZZLE_TEMP 120   // (°C) Only applies to E0 at this time
   #define LEVELING_BED_TEMP     65
